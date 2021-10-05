@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta name="theme-color" content="green">
+    <title>signup</title>
+    <style>
+        body{
+            background-image: url('reg-back-img.jfif');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container{
+            background: rgba(133, 133, 133, 0.712);
+            padding: 15px;
+            width: 500px;
+            margin:50px auto;
+            border: 1px black solid;
+            box-shadow: 0px 0px 5px gray,0px 0px 5px gray;
+            align-items: center;
+            align-content: center;
+        }
+        
+        .inner-container{
+            padding: 20px;
+            width: 100%;
+            align-items: center;
+            align-content: center;
+        }
+        
+
+        #sign-up-text{
+            font-size: 20pt;
+            font-weight: bold;
+            color: #000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label{
+            font-size: 12pt;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input[type="text"],input[type="password"],input[type="number"],input[type="email"]
+        {
+            background: rgba(250, 240, 230, 0);
+            width: 300px;
+            height: 35px;
+            font-size: 12pt;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #777;
+        }
+
+        textarea
+        {
+            max-height: 40px;
+            min-height: 40px;
+            max-width: 300px;
+            min-width: 300px;
+            outline: none;
+            font-size: 10pt;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input[type="submit"]
+        {
+            height: 35px;
+            width: 300px;
+            margin-top: 30px;
+            background-color: green;
+            color:whitesmoke;
+            font-size: 12pt;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            line-height: 30px;
+            outline: none;
+            border: none;
+            align-items: center;
+            align-content: center;
+        }
+        input[type="submit"]:hover{
+            filter: brightness(90%);
+            cursor: pointer;
+        }
+
+        table tr p 
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 9pt;
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="inner-container">
+            <form action="" method="POST">
+                <label for="signup" id="sign-up-text">Sign Up</label><br><br>
+                    <table cellspacing="10" >
+                        <tr>
+                            <td>
+                                <label for="name">Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="name" id="" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="enrollmentNo">Enrollment No:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="enrollmentno" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="branch">Branch:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="branch" id="" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gender">Gender:</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="gender" value="male" id=""> Male
+                                <input type="radio" name="gender" value="female" id="">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" id="" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="dob">DOB:</label>
+                            </td>
+                            <td>
+                                <input type="date" name="dob" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="subject">Subject:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="subject[]" value="c" id="">C
+                                <input type="checkbox" name="subject[]" value="cpp" id="">CPP
+                                <input type="checkbox" name="subject[]" value="java" id="">JAVA
+                                <input type="checkbox" name="subject[]" value="Adjava" id="">ADVANCE JAVA
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Address</label>
+                            </td>
+                            <td>
+                                <textarea name="address" id="" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="username">Username:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="username" id="" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="password" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                               <center>  <input type="submit" value="SUBMIT"> </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                               <center>
+                                    <p>
+                                        Already have an account? <a href="#">Login</a>
+                                    </p> 
+                                </center>
+                            </td>
+                        </tr>
+                    </table>   
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
